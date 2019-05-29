@@ -2,6 +2,7 @@
 // But here's using UPPERCASE LETTERS for names which must be const
 var CALENDAR_NAME = "Your Calendar name";
 var EVENT_DEFAULT_TEXT = " - Birthday";
+var BEGIN_ROW_NUMBER = 1;
 
 function main() {
   var rows = SpreadsheetApp.getActiveSpreadsheet().getDataRange();
@@ -17,7 +18,7 @@ function main() {
     currentCalendar = newCalendar;
   }
   
-  for(i=0; i < numRows; i++){
+  for(i = BEGIN_ROW - 1; i < numRows; i++){
     
     // This fix empty cells when a table is generated with IMPORTRANGE
     if(values[i][1] == ""){
