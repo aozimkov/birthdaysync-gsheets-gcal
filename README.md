@@ -1,5 +1,5 @@
-# birthdaysync-gsheets-gcal
 # Example script Load Birthday Events from Google Sheets to Google Calendar by Google Apps Script
+## birthdaysync-gsheets-gcal
 
 
 IMPORTANT: Be carefully when you make a changes in the script, because script can remove data from existing calendar!
